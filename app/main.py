@@ -14,9 +14,9 @@ async def main() -> None:
     hue_light = HueLightDevice()
     speaker = SmartSpeakerDevice()
     toilet = SmartToiletDevice()
-    hue_light_id = service.register_device(hue_light)
-    speaker_id = service.register_device(speaker)
-    toilet_id = service.register_device(toilet)
+    hue_light_id = await service.register_device(hue_light)
+    speaker_id = await service.register_device(speaker)
+    toilet_id = await service.register_device(toilet)
     #
     # create a few programs
     wake_up_program = [
