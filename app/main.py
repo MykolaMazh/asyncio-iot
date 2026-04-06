@@ -33,8 +33,8 @@ async def main() -> None:
     ]
 
     # run the programs
-    service.run_program(wake_up_program)
-    service.run_program(sleep_program)
+    await service.run_program(wake_up_program)
+    await service.run_program(sleep_program)
 
 
 if __name__ == "__main__":
